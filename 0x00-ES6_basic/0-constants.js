@@ -1,4 +1,3 @@
-@@ -1,15 +1,15 @@
 export function taskFirst () {
   const task = 'I prefer const when I can.'
   return task
