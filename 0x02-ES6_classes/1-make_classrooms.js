@@ -1,4 +1,5 @@
 import Classroom from './0-classroom';
+
 function initializeRooms() {
   return [
     new Classroom(19),
@@ -6,4 +7,5 @@ function initializeRooms() {
     new Classroom(34),
   ];
 }
+
 export default initializeRooms;
