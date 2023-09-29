@@ -4,6 +4,7 @@ class HolbertonCourse {
     this.length = length;
     this.students = students;
   }
+
   /**
    * @param {String} name
    */
@@ -13,9 +14,11 @@ class HolbertonCourse {
     }
     this._name = name;
   }
+
   get name() {
     return this._name;
   }
+
   /**
    * @param {Number} length
    */
@@ -25,9 +28,11 @@ class HolbertonCourse {
     }
     this._length = length;
   }
+
   get length() {
     return this._length;
   }
+
   /**
    * @param {Array} students
    */
@@ -38,8 +43,10 @@ class HolbertonCourse {
       throw new TypeError('Students must be an Array');
     }
   }
+
   get students() {
     return this._students;
   }
 }
+
 export default HolbertonCourse;
