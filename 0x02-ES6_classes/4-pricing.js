@@ -1,9 +1,11 @@
 import Currency from './3-currency';
+
 class Pricing {
   constructor(amount, currency) {
     this.amount = amount;
     this.currency = currency;
   }
+
   /**
    * @param {Number} amount
    */
@@ -13,9 +15,11 @@ class Pricing {
     }
     this._amount = amount;
   }
+
   get amount() {
     return this._amount;
   }
+
   /**
    * @param {Currency} currency
    */
@@ -26,12 +30,15 @@ class Pricing {
       throw new TypeError('currency must be an instance of Currency');
     }
   }
+
   get currency() {
     return this._currency;
   }
+
   displayFullPrice() {
     return `${this.amount} ${this.currency.displayFullCurrency()}`;
   }
+
   /**
    * @param {Number} amount
    * @param {Number} conversionRate
@@ -40,10 +47,13 @@ class Pricing {
     if (typeof amount !== 'number') {
       throw new TypeError('amount must be a number');
     }
+
     if (typeof conversionRate !== 'number') {
       throw new TypeError('conversionRate must be a number');
     }
+
     return amount * conversionRate;
   }
 }
+
 export default Pricing;
