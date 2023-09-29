@@ -9,6 +9,7 @@ class Building {
     }
     this.sqft = sqft;
   }
+
   /**
    * @param {Number} sqft
    */
@@ -18,8 +19,10 @@ class Building {
     }
     this._sqft = sqft;
   }
+
   get sqft() {
     return this._sqft;
   }
 }
+
 export default Building;
